@@ -13,7 +13,7 @@ const App = () => {
 
     const getData = async () => {
         try {
-            const response = await fetch(`${process.env.SERVERURL}/todos/${userEmail}`)
+            const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${userEmail}`)
             if (response.status === 200) {
                 const json = await response.json()
                 setTasks(json)
@@ -26,7 +26,6 @@ const App = () => {
     useEffect(() => getData, [])
 
     console.log(tasks)
-
 
     return (
         <div className="app">

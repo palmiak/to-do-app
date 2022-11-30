@@ -5,7 +5,7 @@ const pool = new Pool({
     user: process.env.USERNAME,
     password: process.env.PASSWORD,
     host: process.env.HOST,
-    port: 5432,
+    port: process.env.DBPORT,
     database: "todoapp"
 })
 
