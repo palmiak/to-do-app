@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "server": "cd server && npm install && node server.js",
+    "build": "cd server && npm install",
+    "start": "node ./server/server.js",
     "client": "cd client && npm install && npm start"
   }
 }
