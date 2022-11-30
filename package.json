@@ -6,3 +6,4 @@
     "server": "cd server && npm install && nodemon server.js",
     "frontend": "cd frontend && npm install && node server.js",
   },
+}
