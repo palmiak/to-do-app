@@ -106,14 +106,4 @@ app.post('/login', async (req, res) => {
     }
 })
 
-app.get('/', async (req, res) => {
-    const {email} = req.params
-    try {
-        res.json('hello world');
-    } catch (err) {
-        console.error(err)
-    }
-})
-
 app.listen(PORT, () => console.log('server is running on PORT ' + PORT))
-
