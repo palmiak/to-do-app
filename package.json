@@ -1,0 +1,8 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "cd server && npm install && nodemon server.js",
+    "frontend": "cd frontend && npm install && node server.js",
+  },
